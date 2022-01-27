@@ -1,22 +1,19 @@
 <script>
     export let letter;
     export let isActive;
-    export let verb;
-    export let canUseEtre;
+
 </script>
 
-{#if isActive}
-    <strong>
-        <span>
-            {letter.toUpperCase()}
-        </span>
-    </strong>
+<span class:active={isActive}>
+    {letter.toUpperCase()}
+</span>
 
-
-
-{:else}
-    <span>{letter.toUpperCase()}</span>
-{/if}
-
-
+<style>
+    span {
+        font-size: 40px;
+    }
+    .active {
+        font-weight: bold;
+    }
+</style>
 
