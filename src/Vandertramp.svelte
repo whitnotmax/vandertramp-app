@@ -10,7 +10,9 @@
 
 <style>
     span {
-        font-size: 40px;
+        font-size: calc(1.5rem + 1vw);
+        text-align: center;
+
     }
     .active {
         font-weight: bold;

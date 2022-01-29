@@ -75,7 +75,7 @@
 
 <div class="container centered column">
 	<div class="white curved padded">
-		<div>
+		<div class="centered">
 			{#each letters as letter}
 			<Vandertramp letter={letter.letter} isActive={letter.isActive}/>
 			{/each}
@@ -126,7 +126,10 @@
 
 	.white {
 		background-color: rgba(255, 255, 255, 0.863);
+		max-width: 60vw;
 	}
+
+	
 
 	.green {
 		background-color: rgb(31, 153, 0);
@@ -143,6 +146,13 @@
 	 label, input, div {
 		 font-size: 30px;
 		 font-family: 'Dongle', sans-serif;
+		 max-width:inherit;
+
+
+	}
+
+	#verb {
+
 	}
 </style>
 
